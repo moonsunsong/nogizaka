@@ -6,6 +6,7 @@ var count = document.getElementById("count");
 
 require('./main.css');
 require('./main.scss');
+require('./main.less');
 
 count.onclick = function(){
     var add = require('./calc.js');
