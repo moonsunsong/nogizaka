@@ -1,3 +1,10 @@
 #num1{
     border:1px solid red;
 }
+#pic{
+    width:200px;
+    height:150px;
+    background-image: url(./miku8.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}

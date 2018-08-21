@@ -4,7 +4,8 @@ module.exports={
     entry:'./main.js',
     output:{
         path:__dirname+'/dist',
-        filename:'build.js'
+        filename:'build.js',
+        publicPath:'dist/'
     },
     mode:'production',
     module:{
@@ -20,6 +21,10 @@ module.exports={
             {
                 test:/\.less$/,
                 loader:'style-loader!css-loader!less-loader'
+            },
+            {
+                test:/\.(jpg|gif|png)$/,
+                loader:'url-loader?limit=30000'
             }
         ]
     }
